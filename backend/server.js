@@ -31,6 +31,7 @@ app.post('/api/command', (req, res) => {
     switch (safeCommand) {
         case 'help':
         case 'skills':
+        case 'banner':
         case 'netstat':
         case 'resume':
         case 'dns_resolve':

@@ -82,4 +82,16 @@ else
     exit 1
 fi
 
+# Compile banner.c (NEW ADDITION: banner)
+echo "Compiling banner.c..."
+$CC $C_FLAGS banner.c -o $OUTPUT_DIR/banner
+if [ $? -eq 0 ]; then
+    echo "SUCCESS: banner executable created."
+else
+    echo "ERROR: Failed to compile banner.c"
+    exit 1
+fi
+
+
+
 echo "--- Compilation Complete ---"

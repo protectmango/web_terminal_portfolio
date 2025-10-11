@@ -6,6 +6,21 @@
     src: local('Monaco'), local('Consolas'), local('DejaVu Sans Mono'), monospace;
 }
 
+/* Removes default link styling and makes it look like normal terminal text */
+#output pre a {
+    color: inherit; /* Inherit the color of the surrounding terminal text */
+    text-decoration: none; /* Remove the underline */
+    cursor: pointer; /* Ensure the pointer cursor is visible */
+    transition: color 0.15s ease; /* Smooth transition for hover effect */
+}
+
+/* Defines the style when the link is hovered over */
+#output pre a:hover {
+    /* Use a bright color that matches your terminal UI (e.g., a bright cyan or green) */
+    color: #00ffc8; 
+    text-decoration: underline; /* Optional: Add underline back on hover for clarity */
+}
+
 body {
     background-color: #212121; /* Dark background for the window/page */
     padding: 20px;
