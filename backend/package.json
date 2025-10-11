@@ -1,0 +1,14 @@
+{
+  "name": "web-terminal-portfolio",
+  "version": "1.0.0",
+  "description": "C-backed concurrent portfolio terminal.",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "worker_threads": "builtin"
+  }
+}

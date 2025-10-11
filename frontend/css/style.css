@@ -1,0 +1,84 @@
+/* frontend/css/style.css */
+
+/* Use a clean, classic monospace terminal font */
+@font-face {
+    font-family: 'Monaco';
+    src: local('Monaco'), local('Consolas'), local('DejaVu Sans Mono'), monospace;
+}
+
+body {
+    background-color: #212121; /* Dark background for the window/page */
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#terminal {
+    width: 80%;
+    max-width: 900px;
+    min-height: 500px;
+    /* macOS Terminal Aesthetic */
+    background-color: #1E1E1E; /* Very dark terminal pane */
+    color: #F8F8F8; /* Light gray text */
+    font-family: 'Monaco', monospace;
+    font-size: 14px;
+    padding: 15px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Subtle shadow effect */
+    border: 1px solid #333; /* Slight border */
+}
+
+/* Ensure output elements inherit the terminal style */
+#output {
+    overflow-y: auto;
+    height: 100%;
+    margin-bottom: 5px;
+}
+
+#output pre {
+    white-space: pre-wrap; /* Wrap long lines */
+    word-break: break-all;
+    margin: 0;
+    padding: 0;
+}
+
+#prompt {
+    color: #F8F8F8; /* Prompt color */
+    white-space: pre; /* Keep prompt spacing consistent */
+}
+
+#command-input {
+    background-color: transparent;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    outline: none;
+    width: calc(100% - 200px); /* Adjust width based on prompt length */
+    caret-color: #FFFFFF; /* White cursor */
+}
+
+/* ANSI Color Styling (Crucial for C program output) */
+.ansi-black { color: #000000; }
+.ansi-red { color: #CD3131; }
+.ansi-green { color: #00FF00; }
+.ansi-yellow { color: #E5E510; }
+.ansi-blue { color: #2472C8; }
+.ansi-magenta { color: #BC3FBC; }
+.ansi-cyan { color: #00C8C8; }
+.ansi-white { color: #E5E5E5; }
+
+/* Bright colors (often used when bold is applied) */
+.ansi-bright-black { color: #666666; }
+.ansi-bright-red { color: #F14C4C; }
+.ansi-bright-green { color: #17A967; }
+.ansi-bright-yellow { color: #FFFF00; }
+.ansi-bright-blue { color: #3B8EEA; }
+.ansi-bright-magenta { color: #D670D6; }
+.ansi-bright-cyan { color: #00FFFF; }
+.ansi-bright-white { color: #FFFFFF; }
+
+.ansi-bold { font-weight: bold; }
