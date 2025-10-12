@@ -32,6 +32,7 @@ app.post('/api/command', (req, res) => {
         case 'help':
         case 'skills':
         case 'banner':
+        case 'about' :
         case 'netstat':
         case 'resume':
         case 'dns_resolve':

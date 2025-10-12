@@ -21,6 +21,7 @@ int main() {
     printf(ANSI_COLOR_CYAN "  > skills    : " ANSI_COLOR_GREEN "Show core technical expertise (C, Networking, Embedded).\n" ANSI_COLOR_RESET);
     printf(ANSI_COLOR_CYAN "  > projects  : " ANSI_COLOR_GREEN "Display a showcase of key C/Embedded projects.\n" ANSI_COLOR_RESET);
     printf(ANSI_COLOR_CYAN "  > resume    : " ANSI_COLOR_GREEN "Download my professional CV.\n" ANSI_COLOR_RESET);
+    printf(ANSI_COLOR_CYAN "  > about     : " ANSI_COLOR_GREEN "Bro, Are you serious 🥹 ,than give it a go...\n" ANSI_COLOR_RESET);
     printf(ANSI_COLOR_CYAN "  ---------------------------------------------------\n" ANSI_COLOR_RESET);
 
     printf("\n" ANSI_COLOR_GREEN "  Type 'help' for the complete list of Networking and Utility commands.\n\n" ANSI_COLOR_RESET);

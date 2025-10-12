@@ -92,6 +92,16 @@ else
     exit 1
 fi
 
+# Compile about.c (NEW ADDITION: about)
+echo "Compiling about.c..."
+$CC $C_FLAGS about.c -o $OUTPUT_DIR/about
+if [ $? -eq 0 ]; then
+    echo "SUCCESS: about executable created."
+else
+    echo "ERROR: Failed to compile about.c"
+    exit 1
+fi
+
 
 
 echo "--- Compilation Complete ---"

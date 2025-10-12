@@ -19,6 +19,9 @@ int main() {
     printf(ANSI_COLOR_GREEN "\n\t\t\tGULSHAN KUMAR RANA\n" ANSI_COLOR_RESET);
     printf("\t\t\t" "Embedded Trainee Engineer\n");
     printf("\t\t\t7042885337 | gulshanrana21.1974@gmail.com | GitHub: /protectmango\n");
+
+    printf("\n\t\t\t" "Hometown : Himachal Pradesh\n");
+    printf("\t\t\t" "Currently :  Bangalore\n");
     
     // -------------------------------------------------------------------
     // 2. PROFILE SUMMARY (Motivational Description - Keyword Rich)
