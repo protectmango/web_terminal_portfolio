@@ -57,10 +57,18 @@ int main() {
     // 5. PROJECTS
     // -------------------------------------------------------------------
     print_section_header("SELECT EMBEDDED PROJECTS");
-    printf("See the '" ANSI_COLOR_CYAN "projects" ANSI_COLOR_RESET "' command for details on the " ANSI_COLOR_YELLOW "Custom RTOS Scheduler" ANSI_COLOR_RESET ", " ANSI_COLOR_YELLOW "Packet Sniffer" ANSI_COLOR_RESET ", and " ANSI_COLOR_YELLOW "DNS Resolver" ANSI_COLOR_RESET ".\n");
+    printf("See the '" ANSI_COLOR_CYAN "projects" ANSI_COLOR_RESET "' command for details on the " ANSI_COLOR_YELLOW "Custom RTOS Scheduler" ANSI_COLOR_RESET ", " ANSI_COLOR_YELLOW "Packet Sniffer" ANSI_COLOR_RESET ", and " ANSI_COLOR_YELLOW "DNS Resolver" ANSI_COLOR_RESET ".\n\n");
 
+     // Provide the link directly. The frontend HTML/CSS will recognize and style the URL.
+    printf(ANSI_COLOR_GREEN "  The latest version of the resume is available for download:\n" ANSI_COLOR_RESET);
 
-    printf("\n" ANSI_COLOR_RED "Note: Please fill in bracketed [details] with your personal information.\n" ANSI_COLOR_RESET);
+    // NOTE: This line MUST be updated with your actual hosted PDF link.
+    // Ensure the link is wrapped in a way that your frontend correctly detects it as a URL.
+
+    printf(ANSI_COLOR_CYAN "  __RESUME_LINK_START__resume.pdf__RESUME_LINK_END__\n" ANSI_COLOR_RESET);
+    printf(ANSI_COLOR_GREEN "\n  Thank you for your interest!\n" ANSI_COLOR_RESET);
+
+    printf("\n" ANSI_COLOR_RED "Note: Feel free to contact through my mail or phone number.\n" ANSI_COLOR_RESET);
     printf(ANSI_COLOR_CYAN "----------------------------------------------------------------\n\n" ANSI_COLOR_RESET);
 
     return 0;
